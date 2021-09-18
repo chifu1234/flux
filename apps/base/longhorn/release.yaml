@@ -22,4 +22,4 @@ spec:
     persistence:
       defaultClassReplicaCount: ${longhorn_persistence_defaultClassReplicaCount:-1}
     csi: 
-      kubeletRootDir: ${longhorn_csi_kubeletRootDir:-"~"}
+      kubeletRootDir: ${longhorn_csi_kubeletRootDir:-"/var/lib/kubelet/"}
