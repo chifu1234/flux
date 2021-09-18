@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: longhorn
-        namespace: kube-system
+        namespace: flux-system
   upgrade:
     remediation:
       remediateLastFailure: true
