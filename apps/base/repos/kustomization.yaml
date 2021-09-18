@@ -8,7 +8,6 @@ resources:
 - falco.yaml
 - grafana.yaml
 - harbor.yaml
-- jetstack.yaml
 - longhorn.yaml
 - minio.yaml
 - prometheus.yaml
