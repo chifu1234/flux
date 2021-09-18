@@ -18,3 +18,6 @@ spec:
       remediateLastFailure: true
   values: 
     kubeProxyReplacement: strict
+    hubble:
+      ui:
+        enabled: true
