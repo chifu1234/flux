@@ -1,0 +1,8 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: bedag-public
+spec:
+  interval: "${helm_repo_interval}"
+  url: https://bedag.github.io/helm-charts
