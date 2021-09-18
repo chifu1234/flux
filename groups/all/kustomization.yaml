@@ -4,4 +4,4 @@ resources:
 - ../../apps/base/cluster-cm
 - ../../apps/base/repos
 - ../../apps/base/cilium
-
+- ../../apps/base/longhorn
