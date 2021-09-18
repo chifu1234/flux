@@ -1,0 +1,32 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: harvester
+spec:
+  interval: 10m0s
+  ref:
+    branch: v0.2
+  url: "https://github.com/harvester/harvester.git"
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: harvester
+spec:
+  interval: 5m
+  releaseName: harvester
+  chart:
+    spec:
+      chart: "${harvester_path:=deploy/charts/harvester}"
+      sourceRef:
+        kind: GitRepository
+        name: harvester
+  upgrade:
+    remediation:
+      remediateLastFailure: true
+  values: 
+    # global:
+    #   imageRegistry: (( concat vars.settings.registry "docker.io"))
+    longhorn:
+      enabled: ${harvester_longhorn_enabled:-false}
