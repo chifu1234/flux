@@ -11,7 +11,7 @@ spec:
   path: ./groups/all
   prune: true
   validation: client
-  podBuild:
+  postBuild:
     substituteFrom:
     - kind: ConfigMap
       name: cluster-configuration
