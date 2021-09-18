@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cluster-configuration
+  namespace: flux-system
+data:
+
+  # default value for helm repos
+  helm_repo_interval: 1m
+  
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: glk
+  namespace: flux-system
+data:
+  as: "65542"
+  ip: "10.124.1.1"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: glo
+  namespace: flux-system
+data:
+  as: "65541"
+  ip: "192.168.101.1"
