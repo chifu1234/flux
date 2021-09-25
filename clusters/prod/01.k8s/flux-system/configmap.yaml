@@ -5,3 +5,4 @@ metadata:
   namespace: flux-system
 data:
   clusterId: "1"
+  location: "glo"
