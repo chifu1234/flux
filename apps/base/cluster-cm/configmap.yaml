@@ -7,8 +7,6 @@ data:
 
   # default value for helm repos
   helm_repo_interval: 1m
-  clusterId: "${clusterId:=0}"
-  location: "${location:=glo}"
   
 ---
 apiVersion: v1
