@@ -4,7 +4,8 @@ kind: HelmRelease
 metadata:
   name: ingress-nginx
 spec:
-  skipCRDs: false
+  install:
+    skipCRDs: false
   interval: 5m
   releaseName: ingress-nginx
   chart:

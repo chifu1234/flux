@@ -14,7 +14,8 @@ kind: HelmRelease
 metadata:
   name: harvester
 spec:
-  skipCRDs: false
+  install:
+    skipCRDs: fals
   interval: 5m
   releaseName: harvester
   chart:
