@@ -5,3 +5,4 @@ resources:
 - ../../apps/base/repos
 - ../../apps/base/cilium
 - ../../apps/base/longhorn
+- ../../apps/base/ingress
