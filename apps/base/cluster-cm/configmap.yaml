@@ -15,8 +15,10 @@ metadata:
   name: glk
   namespace: flux-system
 data:
-  as: "65542"
-  ip: "10.124.1.1"
+  peerAs: "65542"
+  peerIp: "10.124.1.1"
+  location: "glk"
+
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -26,3 +28,4 @@ metadata:
 data:
   peerAs: "65541"
   peerIp: "192.168.101.1"
+  location: "glo"

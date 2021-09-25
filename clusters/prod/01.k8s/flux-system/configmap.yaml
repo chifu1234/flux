@@ -4,6 +4,4 @@ metadata:
   name: cluster-configuration
   namespace: flux-system
 data:
-
-  # default value for helm repos
   clusterId: "1"
