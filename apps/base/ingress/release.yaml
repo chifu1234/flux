@@ -12,8 +12,9 @@ spec:
     spec:
       chart: "ingress-nginx"
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: ingress-nginx
+        namespace: flux-system
   upgrade:
     remediation:
       remediateLastFailure: true
