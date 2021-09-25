@@ -25,3 +25,11 @@ spec:
     kind: GitRepository
     name: flux-system
   validation: client
+  PostBuild:
+    substitute:
+      clusterId: 1
+    substituteFrom:
+          - kind: ConfigMap
+            name: cluster-configuration
+          - kind: ConfigMap
+            name: glo

@@ -7,6 +7,8 @@ data:
 
   # default value for helm repos
   helm_repo_interval: 1m
+  clusterId: "${clusterId:=0}"
+  location: "${location:=glo}"
   
 ---
 apiVersion: v1
@@ -24,5 +26,5 @@ metadata:
   name: glo
   namespace: flux-system
 data:
-  as: "65541"
-  ip: "192.168.101.1"
+  peerAs: "65541"
+  peerIp: "192.168.101.1"

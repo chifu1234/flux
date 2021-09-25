@@ -22,3 +22,23 @@ spec:
         enabled: true
       relay:
         enabled: true
+      bgp:
+        announce:
+          loadbalancerIP: true
+        enabled: true
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bgp-config
+data:
+  config.yaml: |
+    peers:
+      - peer-address: ${peerIp}
+        peer-asn: ${peerAs}
+        my-asn: ${myAs:=64512}
+    address-pools:
+      - name: intern
+        protocol: bgp
+        addresses:
+          - "198.19.${cluster_id}.0/24"
