@@ -7,7 +7,6 @@ data:
 
   # default value for helm repos
   helm_repo_interval: 1m
-  
 ---
 apiVersion: v1
 kind: ConfigMap
