@@ -41,4 +41,4 @@ data:
       - name: intern
         protocol: bgp
         addresses:
-          - "198.19.${cluster_id}.0/24"
+          - "198.19.${clusterId:=0}.0/24"
