@@ -32,3 +32,4 @@ spec:
     #   imageRegistry: (( concat vars.settings.registry "docker.io"))
     longhorn:
       enabled: ${harvester_longhorn_enabled:-false}
+    replicas: 1
