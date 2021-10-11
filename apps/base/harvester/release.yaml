@@ -15,7 +15,7 @@ metadata:
   name: harvester
 spec:
   install:
-    skipCRDs: fals
+    skipCRDs: false
   interval: 5m
   releaseName: harvester
   chart:
