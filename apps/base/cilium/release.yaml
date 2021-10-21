@@ -26,6 +26,10 @@ spec:
         announce:
           loadbalancerIP: true
         enabled: true
+    global:
+      cluster:
+        id: ${clusterId:=0}
+        name: ${clusterId:=0}
 ---
 apiVersion: v1
 kind: ConfigMap
